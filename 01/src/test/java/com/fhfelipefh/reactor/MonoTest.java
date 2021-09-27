@@ -2,9 +2,12 @@ package com.fhfelipefh.reactor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.reactivestreams.Subscription;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 import reactor.test.StepVerifierOptions;
+
+import java.util.Locale;
 
 /**
  * Reactive Streams
@@ -38,9 +41,52 @@ public class MonoTest {
     public void monoSubscriberConsumer() {
         String name = "felipe";
         Mono<String> mono = Mono.just(name).log();
-        StepVerifier.create(mono) // StepVerifier
+        mono.subscribe(s -> log.info(s)); // pega valor de dentro do publisher
+        StepVerifier.create(mono)
                 .expectNext(name)
                 .verifyComplete();
+    }
+
+    @Test
+    public void monoSubscriberConsumerError() {
+        String name = "felipe";
+        Mono<String> mono = Mono.just(name).map(s -> {
+            throw new RuntimeException("Testing mono with error");
+        });
+        mono.subscribe(s -> log.info(s), s -> log.error("Something bad")); // pega valor de dentro do publisher
+        // mono.subscribe(s -> log.info(s),Throwable::printStackTrace); print errors
+        StepVerifier.create(mono)
+                .expectError(RuntimeException.class)
+                .verify();
+    }
+
+    @Test
+    public void monoSubscriberConsumerComplete() {
+        String name = "felipe";
+        Mono<String> mono = Mono.just(name)
+                .log()
+                .map(String::toUpperCase);
+        mono.subscribe(s -> log.info(s), Throwable::printStackTrace, () -> log.info("FINISHED!")); // pega valor de dentro do publisher
+        StepVerifier.create(mono)
+                .expectNext(name.toUpperCase())
+                .verifyComplete();
+    }
+
+    @Test
+    public void monoSubscriberConsumerSubscription() {
+        String name = "felipe";
+        Mono<String> mono = Mono.just(name)
+                .log()
+                .map(String::toUpperCase);
+
+        mono.subscribe(s -> log.info(s), Throwable::printStackTrace,
+                () -> log.info("FINISHED!")
+                , subscription -> subscription.request(2));
+
+        /*
+        StepVerifier.create(mono)
+                .expectNext(name.toUpperCase())
+                .verifyComplete();*/
     }
 
 

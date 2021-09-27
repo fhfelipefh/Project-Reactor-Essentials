@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +34,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.MonoTest.monoSubscriber">
+  <component name="RunManager" selected="JUnit.MonoTest.monoSubscriberConsumerSubscription">
+    <configuration name="MonoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-reactor-essentials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonoTest.monoSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
@@ -57,7 +66,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonoTest.monoSubscriberConsumerComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +76,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="monoSubscriberConsumerComplete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonoTest.monoSubscriberConsumerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-reactor-essentials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
+      <option name="METHOD_NAME" value="monoSubscriberConsumerError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonoTest.monoSubscriberConsumerSubscription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-reactor-essentials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
+      <option name="METHOD_NAME" value="monoSubscriberConsumerSubscription" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,8 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerSubscription" />
+        <item itemvalue="JUnit.MonoTest" />
+        <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerComplete" />
+        <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerError" />
         <item itemvalue="JUnit.MonoTest.monoSubscriber" />
-        <item itemvalue="JUnit.MonoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632781442417</updated>
-      <workItem from="1632781444739" duration="1871000" />
+      <workItem from="1632781444739" duration="3221000" />
     </task>
     <servers />
   </component>

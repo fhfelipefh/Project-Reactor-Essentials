@@ -2,12 +2,8 @@ package com.fhfelipefh.reactor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.reactivestreams.Subscription;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
-import reactor.test.StepVerifierOptions;
-
-import java.util.Locale;
 
 /**
  * Reactive Streams
@@ -94,12 +90,36 @@ public class MonoTest {
         String name = "felipe";
         Mono<String> mono = Mono.just(name)
                 .log()
-                .map(String::toUpperCase);
+                .map(String::toUpperCase)
+                .doOnSubscribe(subscription -> log.info("Subscribed"))
+                .doOnRequest(longNumber -> log.info("Request received..."))
+                .doOnNext(s -> log.info("Value is gere. Executing: doOnNext{}: ", s))
+                .doOnSuccess(s -> log.info("doOnSuccess executed"));
 
         mono.subscribe(s -> log.info(s), Throwable::printStackTrace,
-                () -> log.info("FINISHED!")
-                , subscription -> subscription.request(2));
+                () -> log.info("FINISHED!"));
+    }
 
+    @Test
+    public void monoDoOnMethods2() {
+        String name = "felipe";
+        Mono<Object> mono = Mono.just(name)
+                .log()
+                .map(String::toUpperCase)
+                .doOnSubscribe(subscription -> log.info("Subscribed"))
+                .doOnRequest(longNumber -> log.info("Request received..."))
+                .flatMap(s -> Mono.empty())//clean lines, not be executed
+                .doOnNext(s -> log.info("Value is gere. Executing: doOnNext{}: ", s))
+                .doOnSuccess(s -> log.info("doOnSuccess executed"));
+    }
+
+
+    @Test
+    public void monoDoOnError() {
+        Mono<Object> error = Mono.error(new IllegalArgumentException("->ERROR - ERROR - ERROR<-"))
+                .doOnError(message -> log.info("Error message: {}:", message.getMessage()))
+                .log();
+        StepVerifier.create(error).expectError(IllegalArgumentException.class).verify();
 
     }
 

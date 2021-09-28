@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.MonoTest.monoSubscriberConsumerSubscription">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.MonoTest.monoDoOnError">
     <configuration name="MonoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
@@ -53,7 +54,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.monoSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonoTest.monoDoOnError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -63,13 +64,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoSubscriber" />
+      <option name="METHOD_NAME" value="monoDoOnError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.monoSubscriberConsumerComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonoTest.monoDoOnMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +80,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoSubscriberConsumerComplete" />
+      <option name="METHOD_NAME" value="monoDoOnMethods" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.monoSubscriberConsumerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonoTest.monoDoOnMethods2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoSubscriberConsumerError" />
+      <option name="METHOD_NAME" value="monoDoOnMethods2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MonoTest.monoDoOnError" />
+        <item itemvalue="JUnit.MonoTest.monoDoOnMethods2" />
+        <item itemvalue="JUnit.MonoTest.monoDoOnMethods" />
         <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerSubscription" />
         <item itemvalue="JUnit.MonoTest" />
-        <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerComplete" />
-        <item itemvalue="JUnit.MonoTest.monoSubscriberConsumerError" />
-        <item itemvalue="JUnit.MonoTest.monoSubscriber" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +138,7 @@
       <updated>1632781442417</updated>
       <workItem from="1632781444739" duration="3221000" />
       <workItem from="1632842661404" duration="1871000" />
+      <workItem from="1632849220957" duration="8563000" />
     </task>
     <servers />
   </component>

@@ -89,5 +89,19 @@ public class MonoTest {
                 .verifyComplete();*/
     }
 
+    @Test
+    public void monoDoOnMethods() {
+        String name = "felipe";
+        Mono<String> mono = Mono.just(name)
+                .log()
+                .map(String::toUpperCase);
+
+        mono.subscribe(s -> log.info(s), Throwable::printStackTrace,
+                () -> log.info("FINISHED!")
+                , subscription -> subscription.request(2));
+
+
+    }
+
 
 }

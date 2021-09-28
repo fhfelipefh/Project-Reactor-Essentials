@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="JUnit.MonoTest.monoSubscriberConsumerSubscription">
     <configuration name="MonoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -133,6 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632781442417</updated>
       <workItem from="1632781444739" duration="3221000" />
+      <workItem from="1632842661404" duration="1871000" />
     </task>
     <servers />
   </component>
@@ -149,5 +153,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

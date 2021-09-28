@@ -24,4 +24,18 @@ Reactive Streams API Components
 - processor
 
  
- 
+ /**
+ * Reactive Streams
+ * 1. Asynchronous
+ * 2. Non-Blocking
+ * 3. Backpressure
+ * Publisher <- (subscribe) Subscriber
+ * Subscription is created
+ * Publisher (onSubscribe with the subscription) -> Subscriber
+ * Subscription <- (request N) Subscriber
+ * Publisher -> (onNext) Subscriber
+ * until:
+ * 1. publisher sends all the objects requested.
+ * 2. publisher sends all the objects it has. (onComplete) subscriber and subscriptions will be canceled.
+ * 3. there is on error. (onError) -> subscriber and subscriptions will be canceled.
+ */

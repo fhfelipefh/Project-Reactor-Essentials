@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
+import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
@@ -70,7 +71,7 @@ public class FluxTest {
         flux.subscribe(new Subscriber<Integer>() { // 2 em 2 items
             private int count = 0;
             private Subscription subscription;
-            private int requestCount = 2;
+            private final int requestCount = 2;
 
             @Override
             public void onSubscribe(Subscription subscription) {
@@ -101,5 +102,35 @@ public class FluxTest {
                 .expectNext(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .verifyComplete();
     }
+
+    @Test
+    public void fluxSubscriberNumbersNotSoUglyBackpressure() {
+        Flux<Integer> flux = Flux.range(1, 10)
+                .log();
+
+        flux.subscribe(new BaseSubscriber<Integer>() {
+            private int count = 0;
+            private final int requestCount = 2;
+
+            @Override
+            protected void hookOnSubscribe(Subscription subscription) {
+                request(requestCount);
+            }
+
+            @Override
+            protected void hookOnNext(Integer value) {
+                count++;
+                if (count >= requestCount) {
+                    count = 0;
+                    request(requestCount);
+                }
+            }
+        });
+        StepVerifier.create(flux)
+                .expectNext(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .verifyComplete();
+    }
+
+    
 
 }

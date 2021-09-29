@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62ce75a0f51e81ad54a2557a6097c12f4d1531b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" afterDir="false" />
     </list>
@@ -40,9 +38,9 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.FluxTest.fluxSubscriberNumbersNotSoUglyBackpressure">
-    <configuration name="FluxTest.fluxSubscriberFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-reactor-essentials" />
+  <component name="RunManager" selected="JUnit.FluxTest.fluxSubscriberIntervalTwo">
+    <configuration name="FluxTest.fluxSubscriberIntervalOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
@@ -51,14 +49,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="fluxSubscriberFromList" />
+      <option name="METHOD_NAME" value="fluxSubscriberIntervalOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FluxTest.fluxSubscriberNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-reactor-essentials" />
+    <configuration name="FluxTest.fluxSubscriberIntervalTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
@@ -67,7 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="fluxSubscriberNumbers" />
+      <option name="METHOD_NAME" value="fluxSubscriberIntervalTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberIntervalTwo" />
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberIntervalOne" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersNotSoUglyBackpressure" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersUglyBackpressure" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersError" />
-        <item itemvalue="JUnit.FluxTest.fluxSubscriberFromList" />
-        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +140,7 @@
       <workItem from="1632781444739" duration="3221000" />
       <workItem from="1632842661404" duration="1871000" />
       <workItem from="1632849220957" duration="12655000" />
-      <workItem from="1632921103801" duration="1180000" />
+      <workItem from="1632921103801" duration="3606000" />
     </task>
     <servers />
   </component>

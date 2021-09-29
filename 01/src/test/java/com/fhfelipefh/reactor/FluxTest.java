@@ -67,7 +67,7 @@ public class FluxTest {
         Flux<Integer> flux = Flux.range(1, 10)
                 .log();
 
-        flux.subscribe(new Subscriber<Integer>() {
+        flux.subscribe(new Subscriber<Integer>() { // 2 em 2 items
             private int count = 0;
             private Subscription subscription;
             private int requestCount = 2;
@@ -97,7 +97,6 @@ public class FluxTest {
 
             }
         });
-
         StepVerifier.create(flux)
                 .expectNext(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .verifyComplete();

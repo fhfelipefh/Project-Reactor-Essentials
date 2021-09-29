@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.FluxTest.fluxSubscriberNumbers">
+  <component name="RunManager" selected="JUnit.FluxTest.fluxSubscriberNumbersUglyBackpressure">
     <configuration name="FluxTest.fluxSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
@@ -51,6 +50,22 @@
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
       <option name="METHOD_NAME" value="fluxSubscriber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FluxTest.fluxSubscriberFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-reactor-essentials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="fluxSubscriberFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.monoDoOnError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxTest.fluxSubscriberNumbersError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +96,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoDoOnError" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="fluxSubscriberNumbersError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.monoDoOnErrorResume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxTest.fluxSubscriberNumbersUglyBackpressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-reactor-essentials" />
       <extension name="coverage">
         <pattern>
@@ -97,24 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoDoOnErrorResume" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoTest.monoDoOnErrorReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-reactor-essentials" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
-      <option name="METHOD_NAME" value="monoDoOnErrorReturn" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="fluxSubscriberNumbersUglyBackpressure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersUglyBackpressure" />
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersError" />
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberFromList" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbers" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriber" />
-        <item itemvalue="JUnit.MonoTest.monoDoOnErrorReturn" />
-        <item itemvalue="JUnit.MonoTest.monoDoOnErrorResume" />
-        <item itemvalue="JUnit.MonoTest.monoDoOnError" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +139,7 @@
       <updated>1632781442417</updated>
       <workItem from="1632781444739" duration="3221000" />
       <workItem from="1632842661404" duration="1871000" />
-      <workItem from="1632849220957" duration="10949000" />
+      <workItem from="1632849220957" duration="12380000" />
     </task>
     <servers />
   </component>

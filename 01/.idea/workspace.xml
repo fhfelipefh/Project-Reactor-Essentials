@@ -38,7 +38,39 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.FluxTest.fluxSubscriberIntervalTwo">
+  <component name="RunManager" selected="JUnit.FluxTest.connectableFluxAutoConnect">
+    <configuration name="FluxTest.connectableFlux" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="connectableFlux" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FluxTest.connectableFluxAutoConnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="connectableFluxAutoConnect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FluxTest.fluxSubscriberIntervalOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
@@ -71,23 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FluxTest.fluxSubscriberNumbersError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-reactor-essentials" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="fluxSubscriberNumbersError" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FluxTest.fluxSubscriberNumbersNotSoUglyBackpressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxTest.fluxSubscriberPrettyBackPressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -97,23 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="fluxSubscriberNumbersNotSoUglyBackpressure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FluxTest.fluxSubscriberNumbersUglyBackpressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-reactor-essentials" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="fluxSubscriberNumbersUglyBackpressure" />
+      <option name="METHOD_NAME" value="fluxSubscriberPrettyBackPressure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FluxTest.connectableFluxAutoConnect" />
+        <item itemvalue="JUnit.FluxTest.connectableFlux" />
+        <item itemvalue="JUnit.FluxTest.fluxSubscriberPrettyBackPressure" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberIntervalTwo" />
         <item itemvalue="JUnit.FluxTest.fluxSubscriberIntervalOne" />
-        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersNotSoUglyBackpressure" />
-        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersUglyBackpressure" />
-        <item itemvalue="JUnit.FluxTest.fluxSubscriberNumbersError" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +140,7 @@
       <workItem from="1632781444739" duration="3221000" />
       <workItem from="1632842661404" duration="1871000" />
       <workItem from="1632849220957" duration="12655000" />
-      <workItem from="1632921103801" duration="3606000" />
+      <workItem from="1632921103801" duration="9383000" />
     </task>
     <servers />
   </component>

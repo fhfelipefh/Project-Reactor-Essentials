@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import reactor.core.publisher.BaseSubscriber;
+import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
@@ -133,9 +134,20 @@ public class FluxTest {
     }
 
     @Test
+    public void fluxSubscriberPrettyBackPressure() {
+        Flux<Integer> stringFlux = Flux.range(1, 10)
+                .log()
+                .limitRate(3);
+
+        stringFlux.subscribe(i -> log.info("Number: ", i));
+        System.out.println("-------------------");
+        StepVerifier.create(stringFlux).expectNext(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).verifyComplete();
+    }
+
+
+    @Test
     public void fluxSubscriberIntervalOne() throws Exception {
         Flux<Long> interval = Flux.interval(Duration.ofMillis(100))
-                .take(10)
                 .log();
 
         interval.subscribe(i -> log.info("Number: ", i));
@@ -156,6 +168,38 @@ public class FluxTest {
 
     private Flux<Long> createInterval() {
         return Flux.interval(Duration.ofDays(1)).log();
+    }
+
+    @Test
+    public void connectableFlux() throws InterruptedException {
+        ConnectableFlux<Integer> connectableFlux = Flux.range(1, 10)
+                .log()
+                .delayElements(Duration.ofMillis(100))
+                .publish();
+
+        connectableFlux.connect();
+
+        StepVerifier.create(connectableFlux)
+                .thenConsumeWhile(i -> i <= 5)
+                .expectNext(6, 7, 8, 9, 10)
+                .expectComplete()
+                .verify();
+    }
+
+    @Test
+    public void connectableFluxAutoConnect() throws InterruptedException {
+        Flux<Integer> fluxAutoConnect = Flux.range(1, 5)
+                .log()
+                .delayElements(Duration.ofMillis(100))
+                .publish()
+                .autoConnect(2);
+
+
+        StepVerifier.create(fluxAutoConnect)
+                .then(fluxAutoConnect::subscribe)
+                .expectNext(1, 2, 3, 4, 5)
+                .expectComplete()
+                .verify();
     }
 
 }

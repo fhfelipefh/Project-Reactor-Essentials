@@ -118,10 +118,40 @@ public class MonoTest {
     public void monoDoOnError() {
         Mono<Object> error = Mono.error(new IllegalArgumentException("->ERROR - ERROR - ERROR<-"))
                 .doOnError(message -> log.info("Error message: {}:", message.getMessage()))
+                .doOnNext(s -> log.info("Executing do doOnNext")) // Não será executado em seguida
                 .log();
+
         StepVerifier.create(error).expectError(IllegalArgumentException.class).verify();
 
     }
 
+    @Test
+    public void monoDoOnErrorResume() {
+        String name = "test";
+        Mono<Object> error = Mono.error(new IllegalArgumentException("->ERROR - ERROR - ERROR<-"))
+                .doOnError(message -> MonoTest.log.error("Error message: {}:", message.getMessage()))
+                .onErrorResume(s -> {
+                    log.info("Inside on error");
+                    return Mono.just(name);
+                })
+                .log();
+
+        StepVerifier.create(error).expectNext(name).verifyComplete();
+    }
+
+    @Test
+    public void monoDoOnErrorReturn() {
+        String name = "test";
+        Mono<Object> error = Mono.error(new IllegalArgumentException("->ERROR - ERROR - ERROR<-"))
+                .doOnError(message -> MonoTest.log.error("Error message: {}:", message.getMessage()))
+                .onErrorReturn("EMPTY")
+                .onErrorResume(s -> {
+                    log.info("Inside on error");
+                    return Mono.just(name);
+                })
+                .log();
+
+        StepVerifier.create(error).expectNext("EMPTY").verifyComplete();
+    }
 
 }

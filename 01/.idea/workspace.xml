@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/textfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,38 +28,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1yk2oTAOgpNNStDXPdJn0VEy5Lr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="io.unthrottled.amii.config.ui.PluginSettingsUI" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.OperatorsTest.multipleSubscribeOnPublishOn">
-    <configuration name="FluxTest.connectableFluxAutoConnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
-      <option name="METHOD_NAME" value="connectableFluxAutoConnect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperatorsTest.multipleSubscribeOnPublishOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OperatorsTest.combineLatestOperator">
+    <configuration name="OperatorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +60,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="multipleSubscribeOnPublishOn" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsTest.publishOnSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperatorsTest.combineLatestOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -81,13 +75,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="publishOnSimple" />
+      <option name="METHOD_NAME" value="combineLatestOperator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsTest.publishOnSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperatorsTest.concatOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +91,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="publishOnSingle" />
+      <option name="METHOD_NAME" value="concatOperator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsTest.subscribeOnSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperatorsTest.concatWithOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +107,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="subscribeOnSingle" />
+      <option name="METHOD_NAME" value="concatWithOperator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorsTest.deferOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
+      <option name="METHOD_NAME" value="deferOperation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OperatorsTest.multipleSubscribeOnPublishOn" />
-        <item itemvalue="JUnit.OperatorsTest.publishOnSimple" />
-        <item itemvalue="JUnit.OperatorsTest.publishOnSingle" />
-        <item itemvalue="JUnit.OperatorsTest.subscribeOnSingle" />
-        <item itemvalue="JUnit.FluxTest.connectableFluxAutoConnect" />
+        <item itemvalue="JUnit.OperatorsTest.combineLatestOperator" />
+        <item itemvalue="JUnit.OperatorsTest" />
+        <item itemvalue="JUnit.OperatorsTest.concatWithOperator" />
+        <item itemvalue="JUnit.OperatorsTest.concatOperator" />
+        <item itemvalue="JUnit.OperatorsTest.deferOperation" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +151,8 @@
       <workItem from="1632842661404" duration="1871000" />
       <workItem from="1632849220957" duration="12655000" />
       <workItem from="1632921103801" duration="12729000" />
-      <workItem from="1633011169814" duration="2006000" />
+      <workItem from="1633011169814" duration="3312000" />
+      <workItem from="1633021406547" duration="9584000" />
     </task>
     <servers />
   </component>
@@ -159,5 +170,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

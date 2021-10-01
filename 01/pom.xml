@@ -22,7 +22,6 @@
                 <version>1.0.6.RELEASE</version>
             </dependency>
 
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>

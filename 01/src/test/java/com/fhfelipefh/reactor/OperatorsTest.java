@@ -109,9 +109,7 @@ public class OperatorsTest {
         Mono<List<String>> list = Mono.fromCallable(() -> Files.readAllLines(Paths.get("./textfile.txt")))
                 .log()
                 .subscribeOn(Schedulers.boundedElastic());
-
         list.subscribe(s -> log.info("{}", s));
-        Thread.sleep(3000);
         StepVerifier.create(list)
                 .expectSubscription()
                 .thenConsumeWhile(l -> {

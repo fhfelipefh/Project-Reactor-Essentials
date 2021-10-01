@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/textfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/MonoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,53 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.OperatorsTest.combineLatestOperator">
+  <component name="RunManager" selected="JUnit.MonoTest">
+    <configuration name="FluxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FluxTest.fluxSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.FluxTest" />
+      <option name="METHOD_NAME" value="fluxSubscriber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
+      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.MonoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OperatorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
@@ -65,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsTest.combineLatestOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperatorsTest.blockhoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <extension name="coverage">
         <pattern>
@@ -75,55 +120,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
       <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="combineLatestOperator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperatorsTest.concatOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="concatOperator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperatorsTest.concatWithOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="concatWithOperator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperatorsTest.deferOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fhfelipefh.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fhfelipefh.reactor" />
-      <option name="MAIN_CLASS_NAME" value="com.fhfelipefh.reactor.OperatorsTest" />
-      <option name="METHOD_NAME" value="deferOperation" />
+      <option name="METHOD_NAME" value="blockhoundTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OperatorsTest.combineLatestOperator" />
+        <item itemvalue="JUnit.MonoTest" />
+        <item itemvalue="JUnit.FluxTest" />
         <item itemvalue="JUnit.OperatorsTest" />
-        <item itemvalue="JUnit.OperatorsTest.concatWithOperator" />
-        <item itemvalue="JUnit.OperatorsTest.concatOperator" />
-        <item itemvalue="JUnit.OperatorsTest.deferOperation" />
+        <item itemvalue="JUnit.OperatorsTest.blockhoundTest" />
+        <item itemvalue="JUnit.FluxTest.fluxSubscriber" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +149,7 @@
       <workItem from="1632849220957" duration="12655000" />
       <workItem from="1632921103801" duration="12729000" />
       <workItem from="1633011169814" duration="3312000" />
-      <workItem from="1633021406547" duration="9584000" />
+      <workItem from="1633021406547" duration="16695000" />
     </task>
     <servers />
   </component>
@@ -173,5 +170,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_reactor_essentials$OperatorsTest_mergeDelayErrorOperator.ic" NAME="OperatorsTest.mergeDelayErrorOperator Coverage Results" MODIFIED="1633037794285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fhfelipefh.reactor.*</FILTER>
+    </SUITE>
   </component>
 </project>

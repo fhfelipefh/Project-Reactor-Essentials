@@ -1,9 +1,19 @@
 package com.fhfelipefh.reactor;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import reactor.blockhound.BlockHound;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
+import reactor.blockhound.BlockHound;
+import reactor.blockhound.BlockingMethod;
+import reactor.blockhound.BlockingOperationError;
+import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
+
+import java.time.Duration;
 
 /**
  * Reactive Streams
@@ -23,6 +33,11 @@ import reactor.test.StepVerifier;
 
 @Slf4j
 public class MonoTest {
+
+    @BeforeAll
+    public static void setUp() {
+        BlockHound.install();
+    }
 
     @Test
     public void monoSubscriber() {

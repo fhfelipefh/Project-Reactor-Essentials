@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="16b2576a-363e-4ec7-92e1-be5f4e21ff5b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/FluxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fhfelipefh/reactor/OperatorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +148,7 @@
       <workItem from="1633011169814" duration="3312000" />
       <workItem from="1633021406547" duration="16695000" />
       <workItem from="1633094996039" duration="651000" />
+      <workItem from="1633096393245" duration="134000" />
     </task>
     <servers />
   </component>

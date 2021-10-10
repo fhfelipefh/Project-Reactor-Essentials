@@ -10,11 +10,9 @@ import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-
 
 // 1 or more elements
 @Slf4j
